@@ -1,5 +1,5 @@
 name: v2ws
 services: 
-image: golang:alpine
+image: tutum/centos:latest
 forward:
-  - 8080:8080
+  - 22:22
