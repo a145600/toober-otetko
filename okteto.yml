@@ -9,13 +9,24 @@ spec:
       app: bt-app
   template:
     metadata:
+      labapiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bt-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bt-app
+  template:
+    metadata:
       labels:
         app: bt-app
     spec:
       containers:
-      - image: pch18/baota:clear
+      – image: pch18/baota:clear
         name: bt-app
----
+—
 apiVersion: v1
 kind: Service
 metadata:
@@ -23,9 +34,9 @@ metadata:
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
-  type: ClusterIP
+  type: ClusterIP  
   ports:
-  - name: "http-port-tcp"
+  – name: "http-port-tcp"
     port: 8888
   selector:
     app: bt-app
