@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-skind: Deployment
+kind: Deployment
 metadata:
   name: bt-app
 spec:
