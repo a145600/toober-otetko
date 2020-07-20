@@ -25,9 +25,8 @@ metadata:
 spec:
   type: ClusterIP  
   ports:
-    name: tcp
-    - containerPort: 80
-    - port: 22
+    name: "http-port-tcp"
+    - port: 22:22
   selector:
     app: bt-app
  
