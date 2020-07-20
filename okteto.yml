@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       – image: pch18/baota:clear
-        name: bt-app
+         name: bt-app
 —
 apiVersion: v1
 kind: Service
