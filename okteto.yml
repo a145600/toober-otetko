@@ -1,17 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bt-app 
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: bt-app
-  template:
-    metadata:
-      labapiVersion: apps/v1
-kind: Deployment
-metadata:
   name: bt-app
 spec:
   replicas: 1
