@@ -26,7 +26,7 @@ spec:
   type: ClusterIP  
   ports:
     name: "http-port-tcp"
-    - port: 8888
+    - port: 80
   selector:
     app: bt-app
  
