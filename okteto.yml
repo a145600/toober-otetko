@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 skind: Deployment
 metadata:
-  name: bt-app
+ name: bt-app
  spec:
   replicas: 1
   selector:
